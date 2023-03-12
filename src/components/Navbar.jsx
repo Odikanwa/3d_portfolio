@@ -21,7 +21,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-12 h-12 object-contain"></img>
+          <img src={logo} alt="logo" className="w-13 h-13 object-contain"></img>
           <p className="text-white text-[18px] font-bold cursor-pointer">
             Michael <span className="sm:block hidden">| Chimezie Odikanwa</span>
           </p>
