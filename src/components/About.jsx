@@ -47,10 +47,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a software developer with skills in JavaScript and Python; and
-        frameworks such as React Native and the MERN stack. I am open to
-        collaborating on interesting projects and entry/trainee software
-        engineer roles. Lemme' help you with the front-end for a start.
+        I'm a technology generalist transitioning to software engineering;
+        passionate aboout bringing ideas to life through computer codes. I'm
+        skilled in JavaScript and Python; and frameworks such as React Native
+        and the MERN stack. I am open to collaborating on interesting projects
+        and entry/trainee software engineer roles. Lemme' help you with the
+        front-end for a start.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
