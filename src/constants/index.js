@@ -156,28 +156,27 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: "With Mike, it's more than just web development.",
+    name: "Emeka Okafor",
+    designation: "Founder",
+    company: "Kiwinative",
+    image: "https://randomuser.me/api/portraits/men/6.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Give him enough time and he can deliver any S/W project. Thanks to him our final year project was a success.",
+    name: "Patrick Ekwedike",
+    designation: "Engineer",
+    company: "Lambert Electromec",
+    image: "https://randomuser.me/api/portraits/men/7.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "You can trust Michael to learn on the job and still deliver excellent results.",
+    name: "John Doe",
+    designation: "Manager, SME-SOHO Div.",
+    company: "MainOne, an Equinix Company",
+    image: "https://randomuser.me/api/portraits/men/8.jpg",
   },
 ];
 
