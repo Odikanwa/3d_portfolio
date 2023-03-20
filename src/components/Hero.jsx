@@ -1,8 +1,37 @@
+import React from "react";
+import Typed from "typed.js";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { slideIn } from "../utils/motion";
 
 const Hero = () => {
+  // Create reference to store the DOM element containing the animation
+  const role = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(role.current, {
+      strings: [
+        "Front-end Developer",
+        "Back-end Developer",
+        "Wordpress Developer",
+        "Mobile(RN) Developer",
+      ],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|",
+      autoInsertCss: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -18,15 +47,15 @@ const Hero = () => {
             Hi, It's Me
           </h1>
           <h1 className="font-black text-[#0ef] lg:text-[60px] sm:text-[35px] xs:text-[30px] text-[40px] lg:leading-[65px] mt-2">
-            Michael Odikanwa
+            Michael Odikanwa.
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            And I'm a software developer
+          <p className={`${styles.heroSubText} mt-2 text-white-100 font-bold`}>
+            And I'm a <span className="text-[#0ef]" ref={role}></span>
           </p>
         </div>
       </div>
-
       <ComputersCanvas />
+
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
