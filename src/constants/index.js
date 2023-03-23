@@ -15,10 +15,8 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  mainone,
+  freelancer,
   carrent,
   jobit,
   tripguide,
@@ -48,6 +46,7 @@ export const navLinks = [
   },
 ];
 
+
 const services = [
   {
     title: "Web Developer",
@@ -62,7 +61,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Front-end Developer",
     icon: creator,
   },
 ];
@@ -126,33 +125,31 @@ const experiences = [
   {
     title: "Software Developer",
     company_name: "Freelance",
-    icon: starbucks,
+    icon: freelancer,
     iconBg: "#383E56",
     date: "November 2022 - Present",
     points: [
       "Develops and maintains web applications using React.js and other related technologies.",
       "Collaborates with team members on product design & architecture.",
-      "Works on both front-end and back-end stacks with respect to the team's strength.",
     ],
   },
   {
     title: "Technical Support Engineer",
     company_name: "MainOne, an Equinix Company",
-    icon: tesla,
+    icon: mainone,
     iconBg: "#E6DEDD",
     date: "October 2022 - Present",
     points: [
-      "Lead",
       "Coordinates Microsoft 365 Cloud proposition, deployment and support.",
       "Oversees domain hosting, virtual servers, C-panels and SSL deployments and support.",
-      "Leads all third-party engagement on Microsoft 365 cloud and SME-SOHO internet(fiber) deployments.",
-      "Performs Fiber-to-the-Home & Fiber-to-the-Office deployment surveys for prospects.",
+      "Leads all third-party engagement on M365 cloud and SME-SOHO internet(fiber) deployments.",
+      "Performs FTTH & FTTO deployment surveys for prospects.",
     ],
   },
   {
     title: "Technical Support Intern",
     company_name: "MainOne, an Equinix Company",
-    icon: shopify,
+    icon: mainone,
     iconBg: "#383E56",
     date: "April 2021 - Sept 2022",
     points: [

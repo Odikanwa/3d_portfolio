@@ -12,6 +12,8 @@ const styles = {
     "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+  socialMediaIcons:
+    "flex flex-row items-center justify-center h-[40px] w-[40px] bg-opacity-0 border-2 border-solid border-[#0ef] rounded-full text-[#0ef] text-[20px] hover:bg-[#0ef] hover:text-[bg-primary] hover:shadow-glow_lg hover:shadow-[#0ef]",
 };
 
 export { styles };

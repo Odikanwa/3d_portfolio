@@ -15,6 +15,18 @@ const Tech = () => {
         <h2 className={styles.sectionHeadText}>Skills.</h2>
       </motion.div>
 
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        My biggest strength is Javascript and some of its popular
+        frameworks/libraries such as Reactjs. I'm comfortable with the MERN
+        stack and can easily boostrap/collaborate on projects based off it. My
+        mobile development skills with React Native(using Expo CLI) is
+        intermediate as well as my Python(& Flask Framework) skills. At the
+        moment, I lean more toward front-end development.
+      </motion.p>
+
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-10">
         {technologies.map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
