@@ -8,10 +8,27 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [navOpacity, setNavOpacity] = useState("bg-opacity-0");
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.addEventListener("scroll", handleScroll);
+    };
+  });
+
+  const handleScroll = () => {
+    if (window.scrollY) {
+      setNavOpacity("bg-opacity-1");
+    }
+    if (window.pageYOffset == 0.0) {
+      setNavOpacity("bg-opacity-0");
+    }
+  };
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-4 fixed top-0 z-20 bg-primary bg-opacity-0`}
+      className={`${styles.paddingX} w-full flex items-center py-4 fixed top-0 z-20 bg-primary ${navOpacity}`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
