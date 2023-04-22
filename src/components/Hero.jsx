@@ -19,8 +19,8 @@ const Hero = () => {
       strings: [
         "Front-end Developer",
         "Back-end Developer",
-        "Wordpress Developer",
         "Mobile(RN) Developer",
+        "Threejs Novice",
       ],
       typeSpeed: 100,
       backSpeed: 100,

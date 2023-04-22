@@ -34,12 +34,12 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
-  },
-  {
     id: "skills",
     title: "Skills",
+  },
+  {
+    id: "work",
+    title: "Work",
   },
   {
     id: "projects",
@@ -84,10 +84,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -100,10 +100,10 @@ const technologies = [
     name: "Three JS",
     icon: threejs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -124,15 +124,15 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "SQL",
-    icon: sql,
-  },
+  // {
+  //   name: "SQL",
+  //   icon: sql,
+  // },
 ];
 
 const experiences = [
   {
-    title: "Software Developer",
+    title: "Web Developer",
     company_name: "Freelance",
     icon: freelancer,
     iconBg: "#383E56",

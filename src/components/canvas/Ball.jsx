@@ -9,6 +9,7 @@ import {
 } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import { DoubleSide } from "three";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -19,8 +20,9 @@ const Ball = (props) => {
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
-        <meshStandardMaterial
+        <meshBasicMaterial
           color="#fff8eb"
+          side={DoubleSide}
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
