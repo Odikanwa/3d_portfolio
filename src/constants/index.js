@@ -13,7 +13,6 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   mainone,
   freelancer,
