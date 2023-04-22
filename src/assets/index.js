@@ -1,11 +1,15 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
+
+
 import mobile from "./mobile.png";
-import web from "./web.png";
+import react_dev from "./react_developer.jpg";
+import python_dev from "./python_developer.jpg";
+import web_dev from "./web_developer.jpg";
+import three_dev from "./threejs_novice.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -26,10 +30,6 @@ import python from "./tech/python.svg";
 import sql from "./tech/sql.svg";
 import expo from "./tech/expo.svg";
 
-// import meta from "./company/meta.png";
-// import shopify from "./company/shopify.png";
-// import starbucks from "./company/starbucks.png";
-// import tesla from "./company/tesla.png";
 import freelancer from "./company/freelancer.jpg";
 import mainone from "./company/mainone.jpg";
 
@@ -39,10 +39,11 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
-  backend,
-  creator,
   mobile,
-  web,
+  react_dev,
+  python_dev,
+  web_dev,
+  three_dev,
   github,
   menu,
   close,

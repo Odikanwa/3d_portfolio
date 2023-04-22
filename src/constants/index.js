@@ -1,8 +1,9 @@
 import {
   mobile,
-  backend,
-  creator,
-  web,
+  react_dev,
+  python_dev,
+  web_dev,
+  three_dev,
   javascript,
   typescript,
   html,
@@ -54,19 +55,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: web_dev,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Mobile(RN) Developer",
+    icon: react_dev,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Python Developer",
+    icon: python_dev,
   },
   {
-    title: "Front-end Developer",
-    icon: creator,
+    title: "Threejs Novice",
+    icon: three_dev,
   },
 ];
 

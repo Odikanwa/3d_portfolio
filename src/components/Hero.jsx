@@ -59,7 +59,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="h-screen w-[100vw] z-999 m-0 absolute justify-center text-center bg-primary">
+      <div className="h-screen w-[100vw] z-11 m-0 absolute justify-center text-center bg-primary">
         
         <Name/>
     {/* //  <ComputersCanvas />  */}
@@ -72,7 +72,7 @@ const Hero = () => {
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#0ef] flex justify-center items-start p-2">
             <motion.div
               animate={{ y: [0, 24, 0] }}
               transition={{
@@ -80,7 +80,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
+              className="w-3 h-3 rounded-full bg-white mb-1"
             />
           </div>
         </a>
