@@ -1,9 +1,14 @@
-import React from "react";
+import React, {Suspense} from "react";
 import Typed from "typed.js";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-import { slideIn } from "../utils/motion";
+import Name from "./canvas/Name";
+// import { ComputersCanvas } from "./canvas";
+
+// import { init, animate, onWindowResize, render } from "./canvas/AsciBall";
+// import { slideIn } from "../utils/motion";
+// import AsciRing from "./canvas/AsciRing";
+// import ReactBall from "./canvas/ReactBall";
 
 const Hero = () => {
   // Create reference to store the DOM element containing the animation
@@ -35,7 +40,7 @@ const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[90px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} absolute inset-0 top-[90px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#0ef]" />
@@ -54,7 +59,16 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      <div className="h-screen w-[100vw] z-1000 m-0 absolute justify-center text-center bg-primary">
+        
+        <Name/>
+    {/* //  <ComputersCanvas />  */}
+
+
+      </div>
+      
+      {/* <div className="h-screen w-[100vw] m-0 z-1000"><ReactBall/></div> */}
+      
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
@@ -71,6 +85,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
+
     </section>
   );
 };

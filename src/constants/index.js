@@ -21,6 +21,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  flask,
+  next,
+  postgresql,
+  python,
+  sql,
+  expo,
 } from "../assets";
 
 export const navLinks = [
@@ -88,6 +94,14 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: next,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -100,24 +114,20 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Flask",
+    icon: flask,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "SQL",
+    icon: sql,
   },
 ];
 
@@ -127,7 +137,7 @@ const experiences = [
     company_name: "Freelance",
     icon: freelancer,
     iconBg: "#383E56",
-    date: "November 2022 - Present",
+    date: "February 2022 - Present",
     points: [
       "Develops and maintains web applications using React.js and other related technologies.",
       "Collaborates with team members on product design & architecture.",
