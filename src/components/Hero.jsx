@@ -59,7 +59,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="h-screen w-[100vw] z-1000 m-0 absolute justify-center text-center bg-primary">
+      <div className="h-screen w-[100vw] z-999 m-0 absolute justify-center text-center bg-primary">
         
         <Name/>
     {/* //  <ComputersCanvas />  */}
