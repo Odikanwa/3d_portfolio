@@ -22,7 +22,6 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import flask from "./tech/flask.svg";
 import next from "./tech/nextjs.svg";
-import postgresql from "./tech/postgresql.svg";
 import python from "./tech/python.svg";
 import sql from "./tech/sql.svg";
 import expo from "./tech/expo.svg";
@@ -67,7 +66,6 @@ export {
   tripguide,
   flask,
   next,
-  postgresql,
   python,
   sql,
   expo,

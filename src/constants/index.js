@@ -23,7 +23,6 @@ import {
   threejs,
   flask,
   next,
-  postgresql,
   python,
   sql,
   expo,
