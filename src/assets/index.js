@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 
 
-import mobile from "./mobile.png";
 import react_dev from "./react_developer.jpg";
 import python_dev from "./python_developer.jpg";
 import web_dev from "./web_developer.jpg";
@@ -33,13 +32,12 @@ import expo from "./tech/expo.svg";
 import freelancer from "./company/freelancer.jpg";
 import mainone from "./company/mainone.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import trilopay from "./trilopay.png";
+import oreegi from "./oreegi.png";
+import umbranded from "./umbranded.png";
 
 export {
   logo,
-  mobile,
   react_dev,
   python_dev,
   web_dev,
@@ -62,9 +60,9 @@ export {
   threejs,
   freelancer,
   mainone,
-  carrent,
-  jobit,
-  tripguide,
+  trilopay,
+  oreegi,
+  umbranded,
   flask,
   next,
   python,

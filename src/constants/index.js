@@ -1,5 +1,4 @@
 import {
-  mobile,
   react_dev,
   python_dev,
   web_dev,
@@ -17,9 +16,9 @@ import {
   docker,
   mainone,
   freelancer,
-  carrent,
-  jobit,
-  tripguide,
+  trilopay,
+  oreegi,
+  umbranded,
   threejs,
   flask,
   next,
@@ -207,12 +206,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Triopay",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Mobile app(RN expo) that allows user register for an account, receive money and make transactions. Other financial use cases are embedded but inactive.",
     tags: [
       {
-        name: "react",
+        name: "react native",
         color: "blue-text-gradient",
       },
       {
@@ -220,54 +219,52 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: trilopay,
+    source_code_link: "https://github.com/Odikanwa/TriloPay",
   },
   {
-    name: "Job IT",
+    name: "Oreegi",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An ecommerce web-based application that allows users place orders purchase original wines from the comfort of their homes. Payments are made online.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "sanity.io",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "api",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: oreegi,
+    source_code_link: "https://github.com/Odikanwa/Oreegi",
+    web_link: "https://oreegi.vercel.app/",
+  },
+  {
+    name: "Umbranded",
+    description:
+      "A modern official website for a branding company(hypothetical) that allows users create custom logos, flyers and cards. Features are inactive.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "styled components",
+        color: "green-text-gradient",
+      },
+    ],
+    image: umbranded,
+    source_code_link: "https://github.com/Odikanwa/umbranded",
+    web_link: "https://umbranded.netlify.app/",
   },
 ];
 

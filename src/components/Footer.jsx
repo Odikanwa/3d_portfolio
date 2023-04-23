@@ -1,7 +1,6 @@
 import React from "react";
 import { BsMeta, BsTwitter, BsGithub } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SectionWrapper } from "../hoc";
 
 import { styles } from "../styles";
 

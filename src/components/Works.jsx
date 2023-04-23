@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { BsGithub } from "react-icons/bs";
 
 const ProjectCard = ({
   index,
@@ -15,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  web_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -36,19 +38,20 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer bg-opacity-0 border-solid hover:border-[#0ef] hover:bg-[#0ef] hover:shadow-glow_lg hover:text-[#0ef] "
             >
-              <img
+              <BsGithub className="w-1/2 h-1/2 object-contain"/>
+              {/* <img
                 src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
-              />
+              /> */}
             </div>
           </div>
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <a href={web_link} target="_blank"><h3 className="text-white font-bold text-[24px] hover:text-[#0ef] active:text-[#0ef] cursor-pointer">{name}</h3></a>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
