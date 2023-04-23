@@ -10,27 +10,29 @@ import {
   Works,
   StarsCanvas,
   Footer,
+  GenStarsCanvas,
 } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary overflow-x-none">
-        <div>
           <Navbar />
           <Hero />
         </div>
         <About />
+        <div className="relative z-0">
         <Tech />
-        <Experience />
+        <StarsCanvas/>
+        </div>
         <Works />
+        <Experience />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
         <Footer />
-      </div>
     </BrowserRouter>
   );
 };

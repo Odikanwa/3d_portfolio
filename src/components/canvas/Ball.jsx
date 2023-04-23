@@ -20,8 +20,8 @@ const Ball = (props) => {
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
-        <icosahedronGeometry args={[1, 1]} />
-        <meshBasicMaterial
+        <icosahedronGeometry args={[1, 2]} />
+        <meshStandardMaterial
           color="#fff8eb"
           side={DoubleSide}
           polygonOffset
@@ -40,21 +40,10 @@ const Ball = (props) => {
   );
 };
 
-// const Badge = () => {
-//   return (
-//     <div className="h-auto w-full flex flex-row flex-wrap justify-center">
-//       {technologies.map((technology) => (
-//         <img key={technology.id} className="py-2 px-3 h-[45px] w-[45px]">{technology.icon}</img>
-//       ))}
-//     </div>
-//   )
-// }
-
 
 const BallCanvas = ({ icon }) => {
   return (
     <>
-    {/* <div className="hidden lg:block"> */}
     <Canvas
       // frameloop="Infinity"
       dpr={[1, 2]}
@@ -68,7 +57,6 @@ const BallCanvas = ({ icon }) => {
 
       <Preload all />
     </Canvas>
-    {/* </div> */}
     <img
           src={icon}
           alt="web-development"

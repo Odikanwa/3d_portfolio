@@ -163,7 +163,7 @@ const experiences = [
       "Coordinates Microsoft 365 Cloud proposition, deployment and support.",
       "Oversees domain hosting, virtual servers, C-panels and SSL deployments and support.",
       "Leads all third-party engagement on M365 cloud and SME-SOHO internet(fiber) deployments.",
-      "Performs FTTH & FTTO deployment surveys for prospects.",
+      "Performs FTTH & FTTO virtual deployment surveys for prospects.",
     ],
   },
   {
