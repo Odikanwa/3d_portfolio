@@ -10,6 +10,7 @@ import {
 
 import CanvasLoader from "../Loader";
 import { DoubleSide } from "three";
+import { technologies } from "../../constants";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -39,12 +40,26 @@ const Ball = (props) => {
   );
 };
 
+// const Badge = () => {
+//   return (
+//     <div className="h-auto w-full flex flex-row flex-wrap justify-center">
+//       {technologies.map((technology) => (
+//         <img key={technology.id} className="py-2 px-3 h-[45px] w-[45px]">{technology.icon}</img>
+//       ))}
+//     </div>
+//   )
+// }
+
+
 const BallCanvas = ({ icon }) => {
   return (
+    <>
+    {/* <div className="hidden lg:block"> */}
     <Canvas
       // frameloop="Infinity"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
+      className="hidden lg:block"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
@@ -53,6 +68,13 @@ const BallCanvas = ({ icon }) => {
 
       <Preload all />
     </Canvas>
+    {/* </div> */}
+    <img
+          src={icon}
+          alt="web-development"
+          className="w-[70%] h-[70%] object-contain rounded-xl block sm:hidden "
+        />
+    </>
   );
 };
 
