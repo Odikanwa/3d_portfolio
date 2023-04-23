@@ -72,7 +72,7 @@ const BallCanvas = ({ icon }) => {
     <img
           src={icon}
           alt="web-development"
-          className="w-[70%] h-[70%] object-contain rounded-xl block sm:hidden "
+          className="w-[70%] h-[70%] object-contain rounded-xl block sm:hidden bg-white mb-[5px]"
         />
     </>
   );
