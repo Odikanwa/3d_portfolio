@@ -20,7 +20,7 @@ const Tech = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         My biggest strength is Javascript and some of its popular
-        frameworks/libraries such as Reactjs. I'm comfortable with the MERN
+        frameworks/libraries such as Reactjs and Nextjs. I'm comfortable with the MERN
         stack and can easily boostrap/collaborate on projects based off it. My
         mobile development skills with React Native(using Expo CLI) is
         intermediate as well as my Python(& Flask Framework) skills. At the

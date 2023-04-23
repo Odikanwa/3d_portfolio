@@ -4,6 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* Scroll thumb styles */
+  .scrollbar::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #0ef;
+    border-radius: 1rem;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:active {
+    background-color: #0ef;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #0ef;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Scroll track styles (Background) */
+  .scrollbar::-webkit-scrollbar-track {
+    background: #140e3a;
+    border-radius: 4px;
+  }
+  .scrollbar::-webkit-scrollbar-track:hover,
+  .scrollbar::-webkit-scrollbar-track:active {
+    background: #140e3a;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -130,17 +158,6 @@
   transform: translateZ(0);
 }
 
-.hero-polygon {
-  width: 100%;
-  height: 100%;
-  
-  background: #11e8bb; /* Old browsers */
-  background: -moz-linear-gradient(top,  #11e8bb 0%, #8200c9 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #11e8bb 0%,#8200c9 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #11e8bb 0%,#8200c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11e8bb', endColorstr='#8200c9',GradientType=0 ); /* IE6-9 */
-  overflow: hidden;
-}
 
 @keyframes mulShdSpin {
   0%,
