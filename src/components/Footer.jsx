@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <a
           href="#"
-          className="py-[10px] px-[20px] text-[#050816] text-[16px] font-semibold bg-[#0ef] rounded-3xl shadow-glow shadow-[#0ef] hover:shadow-glow_lg"
+          className="py-[10px] px-[20px] text-[#050816] text-[16px] font-semibold bg-[#0ef] rounded-3xl shadow-glow shadow-[#0ef] hover:shadow-glow_lg animate-slideRight-animation delay-500"
         >
           Download CV
         </a>

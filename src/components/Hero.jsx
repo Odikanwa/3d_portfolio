@@ -48,13 +48,13 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className="font-black text-white lg:text-[30px] sm:text-[20px] xs:text-[20px] text-[30px] lg:leading-[35px] mt-2">
+          <h1 className="font-black text-white lg:text-[30px] sm:text-[20px] xs:text-[20px] text-[30px] lg:leading-[35px] mt-2 animate-slideLeft-animation delay-300">
             Hi, It's Me
           </h1>
-          <h1 className="font-black text-[#0ef] lg:text-[60px] sm:text-[35px] xs:text-[30px] text-[40px] lg:leading-[65px] mt-2">
+          <h1 className="font-black text-[#0ef] lg:text-[60px] sm:text-[35px] xs:text-[30px] text-[40px] lg:leading-[65px] mt-2 animate-slideRight-animation delay-500">
             Michael Odikanwa.
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 font-bold`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 font-bold animate-slideLeft-animation delay-500`}>
             And I'm a <span className="text-[#0ef]" ref={role}></span>
           </p>
         </div>
@@ -70,9 +70,9 @@ const Hero = () => {
       {/* <div className="h-screen w-[100vw] m-0 z-1000"><ReactBall/></div> */}
       
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-21 cursor-pointer">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#0ef] flex justify-center items-start p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#0ef] flex justify-center items-start p-2 cursor-pointer">
             <motion.div
               animate={{ y: [0, 24, 0] }}
               transition={{
@@ -80,7 +80,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-white mb-1"
+              className="w-3 h-3 rounded-full bg-white mb-1 cursor-pointer"
             />
           </div>
         </a>

@@ -20,9 +20,44 @@ module.exports = {
       screens: {
         xs: "450px",
       },
-      // backgroundImage: {
-      //   "hero-pattern": "url('/src/assets/herobg.png')",
-      // },
+      keyframes: {
+        "slideLeft": {
+          "0%": {
+            transform: "translateX(100px)",
+            opacity: 0
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: 1
+          }
+        },      
+        "slideTop": {
+          "0%": {
+            transform: "translateY(100px)",
+            opacity: 0
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: 1
+          }
+        },     
+        "slideBottom": {
+          "0%": {
+            transform: "translateY(-100px)",
+            opacity: 0
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: 1
+          }
+        }
+      },
+      animation: {
+        "slideRight-animation": "slideRight 1.1s ease forwards",
+        "slideLeft-animation": "slideLeft 1.1s ease forwards",
+        "slideTop-animation": "slideTop 1.1s ease forwards",
+        "slideBottom-animation": "slideBottom 1.1s ease forwards",
+      }
     },
   },
   plugins: [require("tailwind-scrollbar")({ nocompatible: true }),],

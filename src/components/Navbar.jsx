@@ -47,7 +47,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? "text-[#0ef]" : "text-white"
-              } text-[18px] font-medium cursor-pointer hover:text-[#0ef]`}
+              } text-[18px] font-medium cursor-pointer hover:text-[#0ef] animate-slideBottom-animation delay-500`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor pointer"
+            className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setToggle(!toggle)}
           />
 
