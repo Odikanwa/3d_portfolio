@@ -25,6 +25,7 @@ import {
   python,
   sql,
   expo,
+  customShirts,
 } from "../assets";
 
 export const navLinks = [
@@ -206,7 +207,28 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Triopay",
+    name: "Custom-Shirts",
+    description: "A web app that allows users that allows users customise shirts. Users can add personal logos, textures or AI generated image to their shirts. Ecommerce fearures not added yet.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "threejs",
+        color: "green-text-gradient"
+      },
+      {
+        name: "openai",
+        color: "pink-text-gradient",
+      }
+    ],
+    image: customShirts,
+    source_code_link: "https://github.com/Odikanwa/Shirts",
+    web_link: "https://custom-shirts.onrender.com/",
+  },
+  {
+    name: "Trilopay",
     description:
       "Mobile app(RN expo) that allows user register for an account, receive money and make transactions. Other financial use cases are embedded but inactive.",
     tags: [

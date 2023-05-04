@@ -35,6 +35,7 @@ import mainone from "./company/mainone.jpg";
 import trilopay from "./trilopay.png";
 import oreegi from "./oreegi.png";
 import umbranded from "./umbranded.png";
+import customShirts from "./custom-shirts.png";
 
 export {
   logo,
@@ -68,4 +69,5 @@ export {
   python,
   sql,
   expo,
+  customShirts,
 };
